@@ -5,12 +5,16 @@ import PackageDescription
 
 let package = Package(
     name: "NotarizeSigner",
+    platforms: [
+        .iOS(.v13)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "NotarizeSigner",
             targets: ["Entities"]),
-        .library(name: "NotarizeSignerWrapper", targets: ["NotarizeSignerWrapper"])
+        .library(name: "NotarizeSignerWrapper", targets: ["NotarizeSignerWrapper"]),
+        .library(name: "Entities", targets: ["Entities"])
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift", .exact("6.2.0")),
@@ -26,7 +30,9 @@ let package = Package(
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/Entities.xcframework.zip",
                       checksum: "777cc23077b5bd20c7ce9c07ac515f65de052ced99eb787f7dc49a421ee769c6"),
         .target(name: "NotarizeSignerWrapper", dependencies: [
+            .target(name: "Entities"),
             "RxSwift",
+            .product(name: "RxCocoa", package: "RxSwift"),
             "RxSwiftExt",
             "Apollo"
         ])
