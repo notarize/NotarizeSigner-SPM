@@ -16,7 +16,8 @@ let package = Package(
         .library(name: "ApolloUtils", targets: ["ApolloUtils"]),
         .library(name: "RxSwift", targets: ["RxSwift"]),
         .library(name: "RxSwiftExt", targets: ["RxSwiftExt"]),
-        .library(name: "RxRelay", targets: ["RxRelay"])
+        .library(name: "RxRelay", targets: ["RxRelay"]),
+        .library(name: "RxCocoa", targets: ["RxCocoa"])
     ],
     dependencies: [],
     targets: [
@@ -36,12 +37,15 @@ let package = Package(
                       checksum: "d3050a0f9ecc3b244e7a77dd371bb1756e9786e6713e1e5555d0b5dd01179d67"),
         .binaryTarget(name: "RxSwift",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/RxSwift.xcframework-6.2.0.zip",
-                      checksum: "411c88b4b491daf01786c30569f6f9a5fdeb37911a86b2561b253fa4e744e4f3"),
+                      checksum: "d93229c90c09d1c0c23c5a7f1281bf2373652e8fce21e7579eb9af077fc4ce45"),
         .binaryTarget(name: "RxSwiftExt",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/RxSwiftExt.xcframework-6.1.0.zip",
                       checksum: "6d0bd8a5e636c84d0bd07967fa3dc188a0c598db0026a2fa75b3c73e19117b06"),
         .binaryTarget(name: "RxRelay",
-                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/RxRelay-6.2.0.xcframework.zip",
-                      checksum: "bf4d04eb0a6d17cb438e33c3046aa3925a36d00184cef72eb01456073b31989d")
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/RxRelay.xcframework-6.2.0.zip",
+                      checksum: "84a7f046aba9696bf18a1022f6cff173c7678910d805833c5e92cf55c220caa0"),
+        .binaryTarget(name: "RxCocoa",
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/RxCocoa.xcframework-6.2.0.zip",
+                      checksum: "627004a684f15e63f8ba62bc8d414aef58368ef18b17881df375817a6fcb5150")
     ]
 )
