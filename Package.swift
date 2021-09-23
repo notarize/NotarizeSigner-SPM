@@ -15,7 +15,8 @@ let package = Package(
         .library(name: "ApolloAPI", targets: ["ApolloAPI"]),
         .library(name: "ApolloUtils", targets: ["ApolloUtils"]),
         .library(name: "RxSwift", targets: ["RxSwift"]),
-        .library(name: "RxSwiftExt", targets: ["RxSwiftExt"])
+        .library(name: "RxSwiftExt", targets: ["RxSwiftExt"]),
+        .library(name: "RxRelay", targets: ["RxRelay"])
     ],
     dependencies: [],
     targets: [
@@ -38,6 +39,9 @@ let package = Package(
                       checksum: "411c88b4b491daf01786c30569f6f9a5fdeb37911a86b2561b253fa4e744e4f3"),
         .binaryTarget(name: "RxSwiftExt",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/RxSwiftExt.xcframework-6.1.0.zip",
-                      checksum: "6d0bd8a5e636c84d0bd07967fa3dc188a0c598db0026a2fa75b3c73e19117b06")
+                      checksum: "6d0bd8a5e636c84d0bd07967fa3dc188a0c598db0026a2fa75b3c73e19117b06"),
+        .binaryTarget(name: "RxRelay",
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/RxRelay-6.2.0.xcframework.zip",
+                      checksum: "bf4d04eb0a6d17cb438e33c3046aa3925a36d00184cef72eb01456073b31989d")
     ]
 )
