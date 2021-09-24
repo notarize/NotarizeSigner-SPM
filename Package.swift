@@ -11,13 +11,19 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(name: "Entities", targets: ["Entities"]),
+        .library(name: "UseCases", targets: ["UseCases"]),
+        .library(name: "Presentation", targets: ["Presentation"]),
+        .library(name: "NotarizeCommon", targets: ["NotarizeCommon"]),
+        .library(name: "NotarizeAuth", targets: ["NotarizeAuth"]),
         .library(name: "Apollo", targets: ["Apollo"]),
         .library(name: "ApolloAPI", targets: ["ApolloAPI"]),
         .library(name: "ApolloUtils", targets: ["ApolloUtils"]),
         .library(name: "RxSwift", targets: ["RxSwift"]),
         .library(name: "RxSwiftExt", targets: ["RxSwiftExt"]),
         .library(name: "RxRelay", targets: ["RxRelay"]),
-        .library(name: "RxCocoa", targets: ["RxCocoa"])
+        .library(name: "RxCocoa", targets: ["RxCocoa"]),
+        .library(name: "Swinject", targets: ["Swinject"]),
+        .library(name: "SnapKit", targets: ["SnapKit"])
     ],
     dependencies: [],
     targets: [
@@ -26,6 +32,18 @@ let package = Package(
         .binaryTarget(name: "Entities",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/Entities.xcframework-beta2.zip",
                       checksum: "fd77c4c56b6d8d6f92a226b66beed2990da113f2efdfaec4c129a3d63c64dcbf"),
+        .binaryTarget(name: "UseCases",
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/UseCases.xcframework-96.0.0.zip",
+                      checksum: "8a267776cb9204adb75351bd216883a8c32dc8bfc1f2379e64f3d0fc14ef7213"),
+        .binaryTarget(name: "Presentation",
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/Presentation.xcframework-96.0.0.zip",
+                      checksum: "cc1bd1df99e1fd43b9bb20284e1f56a65a34bdf651fa33066731c1dc9c7425cb"),
+        .binaryTarget(name: "NotarizeCommon",
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/NotarizeCommon.xcframework-96.0.0.zip",
+                      checksum: "bad1dca571be4d573473b0dfb7f3b7883066bf9ffe93434d8ac3756b60256eab"),
+        .binaryTarget(name: "NotarizeAuth",
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/NotarizeAuth.xcframework-96.0.0.zip",
+                      checksum: "6e290447bbf8e6d7e3e321c979fe00279a97043227ec11b76869d83e03124e6c"),
         .binaryTarget(name: "Apollo",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/Apollo.xcframework-0.48.0.zip",
                       checksum: "bf90d76f10dcb2ebdfc837070c90c93afb9d41528cc9577f060add5a34f212ef"),
@@ -46,6 +64,12 @@ let package = Package(
                       checksum: "84a7f046aba9696bf18a1022f6cff173c7678910d805833c5e92cf55c220caa0"),
         .binaryTarget(name: "RxCocoa",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/RxCocoa.xcframework-6.2.0.zip",
-                      checksum: "627004a684f15e63f8ba62bc8d414aef58368ef18b17881df375817a6fcb5150")
+                      checksum: "627004a684f15e63f8ba62bc8d414aef58368ef18b17881df375817a6fcb5150"),
+        .binaryTarget(name: "Swinject",
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/Swinject.xcframework-2.7.1.zip",
+                      checksum: "96034fce9b2591e7bd45f22fbfb8334d26c749ba4ddd74bdb87cb770a6720201"),
+        .binaryTarget(name: "SnapKit",
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/SnapKit.xcframework-5.0.1.zip",
+                      checksum: "975e3c17a987ed33cb4c7eb0ea02619b5a424df03bbb53eeea9e5acd4ac31583")
     ]
 )
