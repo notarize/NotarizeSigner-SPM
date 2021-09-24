@@ -23,7 +23,8 @@ let package = Package(
         .library(name: "RxRelay", targets: ["RxRelay"]),
         .library(name: "RxCocoa", targets: ["RxCocoa"]),
         .library(name: "Swinject", targets: ["Swinject"]),
-        .library(name: "SnapKit", targets: ["SnapKit"])
+        .library(name: "SnapKit", targets: ["SnapKit"]),
+        .library(name: "Segment", targets: ["Segment"])
     ],
     dependencies: [],
     targets: [
@@ -70,6 +71,7 @@ let package = Package(
                       checksum: "96034fce9b2591e7bd45f22fbfb8334d26c749ba4ddd74bdb87cb770a6720201"),
         .binaryTarget(name: "SnapKit",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/SnapKit.xcframework-5.0.1.zip",
-                      checksum: "975e3c17a987ed33cb4c7eb0ea02619b5a424df03bbb53eeea9e5acd4ac31583")
+                      checksum: "975e3c17a987ed33cb4c7eb0ea02619b5a424df03bbb53eeea9e5acd4ac31583"),
+        .binaryTarget(name: "Segment", url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/Segment.xcframework-4.1.5.zip", checksum: "bb097593d236a9fb3453089fed81bf72369d048127b029a0cc3dd9002fbd0999")
     ]
 )
