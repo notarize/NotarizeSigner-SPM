@@ -21,8 +21,8 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(name: "Entities",
-                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/Entities.xcframework-spm-ext.zip",
-                      checksum: "65f3a3051f9241f35c0a76f4cdc41911c4b5c4c7f17664b8135bd53dcd8fbb5b"),
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/Entities.xcframework-spm-2.zip",
+                      checksum: "a205f774f2e62c135af4bfb83cfdd622c5bac94cf43a95e37a06acf7621d8509"),
         .target(name: "NotarizeDeps", dependencies: [
             "RxSwift",
             .product(name: "RxCocoa", package: "RxSwift"),
