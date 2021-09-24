@@ -36,7 +36,9 @@ let package = Package(
         .package(name: "JWTDecode",
                  url: "https://github.com/auth0/JWTDecode.swift",
                  .exact("2.6.2")),
-        .package(url: "https://github.com/Swinject/Swinject", .exact("2.7.1"))
+        .package(url: "https://github.com/Swinject/Swinject", .exact("2.7.1")),
+        .package(url: "https://github.com/jverdi/JVFloatLabeledTextField",
+                 .exact("1.2.5"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -67,7 +69,8 @@ let package = Package(
             "DeviceKit",
             "Kingfisher",
             "JWTDecode",
-            "Swinject"
+            "Swinject",
+            "JVFloatLabeledTextField"
         ])
     ]
 )
