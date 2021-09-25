@@ -15,9 +15,11 @@ let package = Package(
         .library(name: "UseCases", targets: ["UseCases"]),
         .library(name: "Presentation", targets: ["Presentation"]),
         .library(name: "NotarizeCommon", targets: ["NotarizeCommon"]),
+        .library(name: "RxSwift", targets: ["RxSwift"]),
+        .library(name: "RxRelay", targets: ["RxRelay"]),
+        .library(name: "RxCocoa", targets: ["RxCocoa"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift", .exact("6.2.0")),
         .package(name: "Apollo",
                  url: "https://github.com/apollographql/apollo-ios",
                  .exact("0.48.0")),
@@ -55,10 +57,16 @@ let package = Package(
         .binaryTarget(name: "NotarizeCommon",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/NotarizeCommon.xcframework-spm.zip",
                       checksum: "20ee64140413db15ffd87eeece681d7aebc25ad42ba109bbbf7da8f37d7f251f"),
+        .binaryTarget(name: "RxSwift",
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/RxSwift.xcframework-6.2.0.zip",
+                      checksum: "d93229c90c09d1c0c23c5a7f1281bf2373652e8fce21e7579eb9af077fc4ce45"),
+        .binaryTarget(name: "RxRelay",
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/RxRelay.xcframework-6.2.0.zip",
+                      checksum: "84a7f046aba9696bf18a1022f6cff173c7678910d805833c5e92cf55c220caa0"),
+        .binaryTarget(name: "RxCocoa",
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/RxCocoa.xcframework-6.2.0.zip",
+                      checksum: "627004a684f15e63f8ba62bc8d414aef58368ef18b17881df375817a6fcb5150"),
         .target(name: "NotarizeDeps", dependencies: [
-            "RxSwift",
-            .product(name: "RxCocoa", package: "RxSwift"),
-            .product(name: "RxRelay", package: "RxSwift"),
             "Apollo",
             .product(name: "ApolloAPI", package: "Apollo"),
             .product(name: "ApolloUtils", package: "Apollo"),
@@ -70,7 +78,6 @@ let package = Package(
             "Kingfisher",
             "JWTDecode",
             "Swinject",
-            "JVFloatLabeledTextField"
         ])
     ]
 )
