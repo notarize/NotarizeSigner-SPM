@@ -34,12 +34,12 @@ let package = Package(
                       checksum: "ea04061661d5698ae6da892ed915e92250778ec9c8dc59d9693c1a03a1a3fd1f"),
         .binaryTarget(name: "NotarizeCommon",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/NotarizeCommon-97.0.0.xcframework.zip",
-                      checksum: "e7014d79a1262e265ef9808e7dfc9873a359442dc11720bc6bb55bccdfdad6f7"),
+                      checksum: "496b59d18b898c0262e06c0390cb4607ad2e0fa1965ec9f3614ecb8c989c7f57"),
         .binaryTarget(name: "NotarizeAuth",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/NotarizeAuth-97.0.0.xcframework.zip",
                       checksum: "e31b5e6beb9a97b5cd8fe95c86bbe1c085663e0a455dcafb11ef0bc87fdbdd99"),
         .binaryTarget(name: "NotarizeSigner",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/NotarizeSigner-97.0.0.xcframework.zip",
-                      checksum: "6a649dba5b4911b2ae45a9e78c3496c9df8ec746b97791ecf4d284231d56c094"),
+                      checksum: "869fd798ca7cd4c6e53eea4fc94e589996c659e6abf6a4b69349817afa68c964"),
     ]
 )
