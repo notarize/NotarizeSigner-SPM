@@ -33,13 +33,13 @@ let package = Package(
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/Presentation-97.0.0.xcframework.zip",
                       checksum: "ea04061661d5698ae6da892ed915e92250778ec9c8dc59d9693c1a03a1a3fd1f"),
         .binaryTarget(name: "NotarizeCommon",
-                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/NotarizeCommon-97.0.0-van.xcframework.zip",
-                      checksum: "5d0cd788b7cb771cc4dfd52c7855acd47dbbf21f616bf73a50020deefbd4585a"),
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/NotarizeCommon-97.0.0.xcframework.zip",
+                      checksum: "e7014d79a1262e265ef9808e7dfc9873a359442dc11720bc6bb55bccdfdad6f7"),
         .binaryTarget(name: "NotarizeAuth",
                       url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/NotarizeAuth-97.0.0.xcframework.zip",
                       checksum: "e31b5e6beb9a97b5cd8fe95c86bbe1c085663e0a455dcafb11ef0bc87fdbdd99"),
         .binaryTarget(name: "NotarizeSigner",
-                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/NotarizeSigner-97.0.0-van.xcframework.zip",
-                      checksum: "4a1908b7c6c7651f3c419ef2bfbcd32ad609455b7ae5d8f12bcb5643fad67e16"),
+                      url: "https://ios-notarize-signer-sdk.s3.us-west-1.amazonaws.com/NotarizeSigner-97.0.0.xcframework.zip",
+                      checksum: "6a649dba5b4911b2ae45a9e78c3496c9df8ec746b97791ecf4d284231d56c094"),
     ]
 )
